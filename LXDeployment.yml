@@ -3,8 +3,8 @@
   hosts: all
   become: true
   vars:
-    kerberos_user_password: "W@DR7!&UF6m?nSuZ"
-    S1Token: "eyJ1cmwiOiAiaHR0cHM6Ly91c2VhMS1jbGFya2NvdW50eXNkLnNlbnRpbmVsb25lLm5ldCIsICJzaXRlX2tleSI6ICIxMThiZmFkZjY0MzcyNTczIn0="
+    kerberos_user_password: ""
+    S1Token: ""
     Interface_Name: "{{ansible_facts.default_ipv4.interface}}"
 
   tasks:
