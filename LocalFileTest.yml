@@ -6,4 +6,4 @@
   
   tasks:
   - name: Copy SSSD Config to /etc/sssd
-    command: /bin/bash -c scp '"ansible@cis.ccsd.net"@172.16.192.69:/AnsibleFS/testfile /tmp/'
+    command: /bin/bash -c 'scp "ansible@cis.ccsd.net"@172.16.192.69:/AnsibleFS/testfile /tmp/'
