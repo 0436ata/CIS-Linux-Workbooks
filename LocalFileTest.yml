@@ -7,5 +7,5 @@
   tasks:
   - name: Copy SSSD Config to /etc/sssd
     copy:
-      src: omsagent-1.14.12-0.universal.x64.sh
-      dest: /tmp/omsagent-1.14.12-0.universal.x64.sh
+      src: SentinelAgent_linux_v22_1_2_7.rpm
+      dest: /tmp/SentinelAgent_linux_v22_1_2_7.rpm
