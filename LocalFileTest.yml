@@ -9,4 +9,6 @@
     expect:
       command: /bin/bash -c 'scp "ansible@cis.ccsd.net"@172.16.192.69:/AnsibleFS/testfile /tmp/'
       responses:
-        (?i)Password: "whZpYAH*b2=ezv3~"
+        Question:
+          - (?i)Fingerprint: "yes"
+          - (?i)Password: "whZpYAH*b2=ezv3~"
