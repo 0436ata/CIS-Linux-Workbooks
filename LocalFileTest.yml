@@ -1,1 +1,12 @@
 ---
+- name: Test File Transfer from Local Server
+  hosts: all
+  become: true
+  vars:
+  
+  tasks:
+  - name: Copy SSSD Config to /etc/sssd
+    copy:
+      remote_src: no
+      src: /AnsibleFS/testfile.test
+      dest: /tmp/testfile.test
