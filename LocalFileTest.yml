@@ -7,6 +7,6 @@
   tasks:
   - name: Copy SSSD Config to /etc/sssd
     copy:
-      remote_src: no
+      remote_src: yes
       src: /AnsibleFS/testfile.test
       dest: /tmp/testfile.test
