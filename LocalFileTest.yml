@@ -6,7 +6,6 @@
   
   tasks:
   - name: Copy SSSD Config to /etc/sssd
-    expect:
-      command: /bin/bash -c 'scp "ansible@cis.ccsd.net"@172.16.192.69:/AnsibleFS/testfile /tmp/'
-      responses:
-        - (?i)The: "yes"
+    copy:
+      src: testfile.test
+      dest: /tmp/testfile.test
