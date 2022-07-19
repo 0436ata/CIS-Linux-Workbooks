@@ -7,5 +7,5 @@
   tasks:
   - name: Copy SSSD Config to /etc/sssd
     copy:
-      src: /AnsibleFS/SentinelAgent_linux_v22_1_2_7.rpm
-      dest: /tmp/SentinelAgent_linux_v22_1_2_7.rpm
+      src: /AnsibleFS/sssd.conf
+      dest: /tmp/sssd.conf
