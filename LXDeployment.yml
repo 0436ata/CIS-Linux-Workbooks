@@ -105,7 +105,7 @@
 
   - name: Copy Chrony config to system
     copy:
-      src: chrony.conf
+      src: /AnsibleFS/chrony.conf
       dest: /etc/chrony.conf
 
   - name: restart chronyd service
@@ -125,7 +125,7 @@
 
   - name: Copy SentinelOne Installer to System
     copy:
-      src: SentinelAgent_linux_v22_1_2_7.rpm
+      src: /AnsibleFS/SentinelAgent_linux_v22_1_2_7.rpm
       dest: /tmp/SentinelAgent_linux_v22_1_2_7.rpm
     when: S1_installed.rc == 1
 
@@ -149,7 +149,7 @@
 
   - name: Creating config to send Secure Logs to Alien Vault
     copy:
-      src: alienvault.conf
+      src: /AnsibleFS/alienvault.conf
       dest: /etc/rsyslog.d/alienvault.conf
 
   - name: Restart syslog
@@ -200,7 +200,7 @@
 
   - name: Copy OMS Agent Installer to System
     copy:
-      src: omsagent-1.14.12-0.universal.x64.sh
+      src: /AnsibleFS/omsagent-1.14.12-0.universal.x64.sh
       dest: /tmp/omsagent-1.14.12-0.universal.x64.sh
     when: oms_installed.rc == 1
 
